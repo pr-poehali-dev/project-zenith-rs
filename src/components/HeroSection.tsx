@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const images = [
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-2.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-1.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-4.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-5.jpg',
+  'https://cdn.poehali.dev/projects/5f740f55-7def-4ded-9061-46e26ee9c9ed/files/cc483f6d-f8a3-4125-a82d-71155ef192c6.jpg',
+  'https://cdn.poehali.dev/projects/5f740f55-7def-4ded-9061-46e26ee9c9ed/files/0a379b22-f1db-4a2f-a8f4-47f565f883c8.jpg',
+  'https://cdn.poehali.dev/projects/5f740f55-7def-4ded-9061-46e26ee9c9ed/files/9189d547-6c50-46ce-86c5-80f834a6778d.jpg',
+  'https://cdn.poehali.dev/projects/5f740f55-7def-4ded-9061-46e26ee9c9ed/files/99cd0319-5ee5-4337-9310-6960dabeb12e.jpg',
 ];
 
 export default function HeroSection() {
@@ -55,8 +55,8 @@ export default function HeroSection() {
             >
               <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-white shadow-2xl md:h-64 md:w-64">
                 <img
-                  src="https://cdn.poehali.dev/templates/creative-portfolio-ru/portrait.jpg"
-                  alt="Креативный специалист"
+                  src="/placeholder-user.jpg"
+                  alt="Архитектор"
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -69,13 +69,43 @@ export default function HeroSection() {
               )}
             >
               <div className="space-y-4">
+                <p className="text-sm font-light uppercase tracking-[0.3em] text-white/60 mb-2">
+                  Архитектурное бюро
+                </p>
                 <p className="text-3xl font-light text-white md:text-4xl lg:text-5xl">
                   Алексей Иванов
                 </p>
                 <p className="text-xl font-light text-white/80 md:text-2xl">
-                  Креативный директор | Дизайнер
+                  Архитектор | Высотное строительство
                 </p>
-                <div className="flex gap-6 pt-4">
+                <p className="mt-4 max-w-lg text-base font-light leading-relaxed text-white/60">
+                  Проектирую высотные здания и небоскрёбы с 2008 года. Более 30 реализованных объектов в России и за рубежом.
+                </p>
+                <div className="flex gap-6 pt-2">
+                  <div className="text-center">
+                    <p className="text-2xl font-light text-white">30+</p>
+                    <p className="text-xs uppercase tracking-widest text-white/50">Объектов</p>
+                  </div>
+                  <div className="w-px bg-white/20" />
+                  <div className="text-center">
+                    <p className="text-2xl font-light text-white">15</p>
+                    <p className="text-xs uppercase tracking-widest text-white/50">Лет опыта</p>
+                  </div>
+                  <div className="w-px bg-white/20" />
+                  <div className="text-center">
+                    <p className="text-2xl font-light text-white">8</p>
+                    <p className="text-xs uppercase tracking-widest text-white/50">Стран</p>
+                  </div>
+                </div>
+                <div className="pt-2">
+                  <a
+                    href="#contact"
+                    className="inline-block border border-white/50 px-8 py-3 text-sm uppercase tracking-widest text-white transition-all hover:bg-white hover:text-black"
+                  >
+                    Обсудить проект
+                  </a>
+                </div>
+                <div className="flex gap-6 pt-2">
                   <a
                     href="https://t.me/"
                     target="_blank"
