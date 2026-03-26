@@ -73,7 +73,7 @@ export default function HeroSection() {
                   Архитектурное бюро
                 </p>
                 <p className="text-3xl font-light text-white md:text-4xl lg:text-5xl">
-                  Алексей Иванов
+                  Алексей Иванцов
                 </p>
                 <p className="text-xl font-light text-white/80 md:text-2xl">
                   Архитектор | Высотное строительство
